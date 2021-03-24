@@ -24,9 +24,7 @@ Route.get('/contatos/edit', () => {
   return { greeting: 'Exibicao das informacoes de um contato' }
 })
 
-Route.post('/contatos', () => {
-  return { greeting: 'Cria um contato' }
-})
+Route.post('/contatos', 'ContatoController.store')
 
 Route.put('/contatos/id', () => {
   return { greeting: 'Editar um contato' }
